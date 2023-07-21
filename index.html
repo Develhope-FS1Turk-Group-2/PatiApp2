@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatiApp</title>
+    <link rel="icon" type="image/png" href="./materials/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="header">
+        <img src="./materials/patiLogo.png" alt="Logo Of PatiApp">
+        <div class="nav">
+            <div class="background">
+                <button>Hizmetler</button>
+                <button onclick="redirectTo('./biz_kimiz.html')">Biz Kimiz</button>
+                <button>SSS</button>
+            </div>
+        </div>
+        <div class="mainLogin">
+            <button>Üye Girişi</button>
+        </div>
+    </div>
+    <div class="bodyContainer">
+        <div class="leftmenu">
+            <div class="pic-ctn">
+                <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+                <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+              </div>
+            <div class="bars">
+                <div id="health" class="background">
+                    <button>Sağlık ve PatiVetler</button>
+                    <div class="landingIcons"><img src="./materials/vet.png" alt=""></div>
+                </div>
+                <div id="product" class="background">
+                    <button>Ürünler</button>
+                    <div class="landingIcons"><img src="./materials/petfood.png" alt=""></div>
+                </div>
+                <div id="friends" class="background">
+                    <button>PatiDost</button>
+                    <div class="landingIcons"> <img src="./materials/dogwalk.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="cat">
+            <img src="./materials/dogandCat.png" alt="Pink Cat Image">
+            <h4>Tuna & Peynir</h4>
+            <h6>2022 Ankara Veteriner Ziyareti</h6>
+        </div>
+    </div>
+</body>
+
+</html>

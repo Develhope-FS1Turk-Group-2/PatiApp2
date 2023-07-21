@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.biz_kimiz_page {
+    background-color: #E6E7EA;
+    min-height: 100vh;
+    padding: 50px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top:last-child {
+    flex-direction: row-reverse;
+}
+
+.top .line {
+    border: 2px solid black;
+    width: 20%;
+    height: 0;
+}
+
+.top .star {
+    font-size: 70px;
+    padding-top: 20px;
+}
+
+.content {
+    width: 60%;
+}
+
+.img {
+    position: absolute;
+    right: 8%;
+    top: 2%;
+}
+
+.img img {
+    width: 85%;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        width: 100%;
+    }
+
+    .img {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
