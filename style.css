@@ -37,19 +37,38 @@ body {
     background-color: none;
     background: none;
     border: none;
-    width: 30%;
+    width: 50%;/*altered from 30% to 50%*/
     border-radius: 50px;
     height: 100%;
     font-size: 25px;
     color: white;
 }
 
-/* Hamburger Menu/Menuler eklenicek */
+/* Hamburger Menu/Menuler eklenicek
 .background button:hover {
     cursor: pointer;
     background-color: #F1A4A4;
+    border-radius: 0%;
+}*/
+/*burak added-start*/
+.sss:hover {
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+    background-color: #f84747;
+    transition: .5s;
 }
-
+.whoweare:hover {
+    border-radius: 0%;
+    background-color: #f84747;
+    transition: .5s;
+}
+.services:hover {
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    background-color: #f84747;
+    transition: .5s;
+}   
+/*burak added-end*/
 .mainLogin {
     justify-content: center;
     width: 10%;
