@@ -7,6 +7,8 @@
     <title>PatiApp</title>
     <link rel="icon" type="image/png" href="./materials/patiLogo.png">
     <link rel="stylesheet" href="./style.css">
+
+    <script>function redirectTo(url) {window.location.href = url;}</script>
 </head>
 
 <body>
@@ -20,11 +22,15 @@
             </div>
         </div>
         <div class="mainLogin">
-            <button onclick="redirectTo('./index.html#taha')" >Üye Girişi</button>
+            <button onclick="redirectTo('./signup_page/signin_page.html')" >Üye Girişi</button>
         </div>
     </div>
     <div class="bodyContainer">
-        
+        <div class="leftmenuContainer">
+            <div class="leftMenu">
+                <img src="./materials/leftMenu.png" alt="">
+            </div>
+        </div>
         <div class="middleMenu">
             <section class="sliderContainer">
                 <div class="slider-wrapper">
@@ -52,6 +58,11 @@
                 <div id="friends" class="background">
                     <button>PatiDost</button>
                 </div>
+            </div>
+        </div>
+        <div class="rightmenuContainer">
+            <div class="rightMenu">
+                <img src="./materials/rightMenu.png" alt="">
             </div>
         </div>
     </div>
