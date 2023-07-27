@@ -55,17 +55,20 @@ body {
     border-bottom-left-radius: 0%;
     border-top-left-radius: 0%;
     background-color: #f84747;
+    cursor: pointer;
     transition: .5s;
 }
 .whoweare:hover {
     border-radius: 0%;
     background-color: #f84747;
+    cursor: pointer;
     transition: .5s;
 }
 .services:hover {
     border-bottom-right-radius: 0%;
     border-top-right-radius: 0%;
     background-color: #f84747;
+    cursor: pointer;
     transition: .5s;
 }   
 /*burak added-end*/
@@ -163,8 +166,39 @@ body {
 .slider {
     display: flex;
     aspect-ratio: 16 / 9;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
+    overflow: hidden;
+    scroll-snap-type:inherit;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
 }
 
 #health {
