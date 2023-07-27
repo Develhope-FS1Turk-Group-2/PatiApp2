@@ -155,7 +155,7 @@ body {
     flex-direction: column;
 }
 .sliderContainer {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .slider-wrapper {
@@ -169,6 +169,7 @@ body {
     overflow: hidden;
     scroll-snap-type:inherit;
     scroll-behavior: smooth;
+    border-radius: 5%;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 
