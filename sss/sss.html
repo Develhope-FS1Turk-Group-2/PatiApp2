@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sıkça Sorulan Sorular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: orange;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .faq-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .question {
+            font-weight: bold;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 5px;
+        }
+
+        .faq-container.open .answer {
+            display: block;
+        }
+
+        .faq-container.open .question::after {
+            content: " ▲";
+        }
+
+        .faq-container .question:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sıkça Sorulan Sorular</h1>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">Patiapp nedir?</div>
+        <div class="answer">elcevap</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">taha?</div>
+        <div class="answer">taha.</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">burak?</div>
+        <div class="answer">burak.</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">zeki?</div>
+        <div class="answer">zeki</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">develhope?</div>
+        <div class="answer">develhope</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">ömer?</div>
+        <div class="answer">ömer!</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">soru7?</div>
+        <div class="answer">cevap7</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">soru8?</div>
+        <div class="answer">cevap8</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">soeu9?</div>
+        <div class="answer">cevap9</div>
+    </div>
+
+    <div class="faq-container" onclick="toggleAnswer(this)">
+        <div class="question">soru10?</div>
+        <div class="answer">cevap10</div>
+    </div>
+
+    
+
+    <script>
+        function toggleAnswer(container) {
+            container.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>
