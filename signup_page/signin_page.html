@@ -12,18 +12,25 @@
             <h1>Giriş</h1>
             <form action="#">
                 <div class="txt_field">
-                    <input type="email" required>
+                    <input type="email" id="email" onchange="lowerCase()" required>
                     <span></span>
                     <label>Eposta</label>
                 </div>
                 <div class="txt_field">
-                    <input type="password" required>
+                    <input type="password" minlength="6" maxlength="12" required>
                     <span></span>
                     <label>Şifre</label>
                 </div>
+                <div class="pass"><a href="./forgotPasswd.html">Şifremi unuttum?</a></div>
                 <input type="submit" value="Giriş Yap">
                 <p>Bir hesabın yok mu? <a href="./signup_page.html" style="color: #2691d9;">Kayıt ol</a></p>
             </form>
         </div>
+        <script>
+            function lowerCase() {
+              const myEmail = document.getElementById("email")
+              myEmail.value = myEmail.value.toLowerCase();
+            }
+        </script>
     </body>
 </html>
