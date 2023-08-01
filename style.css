@@ -57,20 +57,20 @@ body {
     border-top-left-radius: 0%;
     background-color: #f84747;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }
 .whoweare:hover {
     border-radius: 0%;
     background-color: #f84747;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }
 .services:hover {
     border-bottom-right-radius: 0%;
     border-top-right-radius: 0%;
     background-color: #f84747;
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
 }   
 /*burak added-end*/
 .mainLogin {
