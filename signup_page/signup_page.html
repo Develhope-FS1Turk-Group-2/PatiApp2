@@ -10,52 +10,63 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
     <body>
-        <div class="center">
-            <h1>Kaydol</h1>
-            <form method="post">
-              <div class="txt_field">
-                <input type="text" required>
-                <span></span>
-                <label>Ad</label>
-              </div>
-              <div class="txt_field">
-                <input type="text" required>
-                <span></span>
-                <label>Soyad</label>
-              </div>
-              <div class="txt_field">
-                <input type="text" required>
-                <span></span>
-                <label>Kullanıcı Adı</label>
-              </div>
-              <div class="txt_field">
-                <input type="email" id="email" onchange="lowerCase()" required>
-                <span></span>
-                <label>Eposta</label>
-              </div>
-              <div class="txt_field">
-                <input type="password" minlength="6" maxlength="12" required>
-                <span></span>
-                <label>Şifre</label>
-              </div>
-              <div class="txt_field">
-                <input type="password" minlength="6" maxlength="12" required>
-                <span></span>
-                <label>Şifreyi Doğrula</label>
-              </div>
-              <div class="pass"><a href="./forgotPasswd.html">Şifremi unuttum?</a></div>
-              <input type="submit" value="Kaydol">
-              <div class="signup_link">
-                <p>Kayıt ol butonuna basarak, <a href="./kullanım_sartlari.html">Kullanım Koşullarımızı</a> ve <a href="./gizlilk politikasi.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz.</p>
-                <p>Zaten bir hesabın var mı? <a href="./signin_page.html">Giriş Yap</a></p>
-              </div>
-            </form>
-          </div>
-          <script>
-            function lowerCase() {
-              const myEmail = document.getElementById("email")
-              myEmail.value = myEmail.value.toLowerCase();
-            }
-          </script>
+      <div class="header">
+        <a href="../index.html" title="home page"><img id="logoImage" src="../materials/patiLogo.png" alt="Logo Of PatiApp"></a>
+        <div class="nav">
+            <div class="background">
+                <button class="services">Hizmetler</button>
+                <button class="whoweare" onclick="redirectTo('./biz_kimiz/biz_kimiz.html')">Biz Kimiz</button>
+                <button class="sss">SSS</button>
+            </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="center">
+          <h1>Kaydol</h1>
+          <form method="post">
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>Ad</label>
+            </div>
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>Soyad</label>
+            </div>
+            <div class="txt_field">
+              <input type="text" required>
+              <span></span>
+              <label>Kullanıcı Adı</label>
+            </div>
+            <div class="txt_field">
+              <input type="email" id="email" onchange="lowerCase()" required>
+              <span></span>
+              <label>Eposta</label>
+            </div>
+            <div class="txt_field">
+              <input type="password" minlength="6" maxlength="12" required>
+              <span></span>
+              <label>Şifre</label>
+            </div>
+            <div class="txt_field">
+              <input type="password" minlength="6" maxlength="12" required>
+              <span></span>
+              <label>Şifreyi Doğrula</label>
+            </div>
+            <div class="pass"><a href="./forgotPasswd.html">Şifremi unuttum?</a></div>
+            <input type="submit" value="Kaydol">
+            <div class="signup_link">
+              <p>Kayıt ol butonuna basarak, <a href="./kullanım_sartlari.html">Kullanım Koşullarımızı</a> ve <a href="./gizlilk politikasi.html">Gizlilik Politikamızı</a> kabul etmiş olursunuz.</p>
+              <p>Zaten bir hesabın var mı? <a href="./signin_page.html">Giriş Yap</a></p>
+            </div>
+          </form>
+        </div>
+        <script>
+          function lowerCase() {
+            const myEmail = document.getElementById("email")
+            myEmail.value = myEmail.value.toLowerCase();
+          }
+        </script>
     </body>
 </html>

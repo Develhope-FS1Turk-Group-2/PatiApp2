@@ -3,10 +3,76 @@
   font-family: "Poppins", sans-serif;
 }
 body{
+  height: 150vh;
   background: linear-gradient(120deg,#ffffff, #F1A4A4);
 }
+/* header starts */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header a {
+  width: 20%;
+}
+.header a #logoImage {
+  width: 47%;
+  margin-top: -2%;
+}
+.nav {
+  position: relative;
+  right: 4rem;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  border: none;
+}
+
+div .background {
+  position: relative;
+  right: 5rem;
+  background-color: #F1A4A4;
+  width: 30%;
+  height: 40%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.background button {
+  background-color: none;
+  background: none;
+  border: none;
+  width: 50%;/*altered from 30% to 50%*/
+  border-radius: 50px;
+  height: 4rem;
+  font-size: 25px;
+  color: white;
+}
+.sss:hover {
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+  background-color: #f84747;
+  cursor: pointer;
+  transition: .3s;
+}
+.whoweare:hover {
+  border-radius: 0%;
+  background-color: #f84747;
+  cursor: pointer;
+  transition: .3s;
+}
+.services:hover {
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 0%;
+  background-color: #f84747;
+  cursor: pointer;
+  transition: .3s;
+}  
+/* header ends */
 .center{
-  margin: 5% auto;
+  position: relative;
+  margin: 0 auto;
+  top: 1rem;
   padding-bottom: 1%;
   width: 400px;
   background: white;
@@ -101,4 +167,14 @@ input[type="submit"]:hover{
 }
 .signup_link a:hover{
   text-decoration: underline;
+}
+#logoImage {
+  cursor: pointer;
+}
+@media (max-width: 1714px) {
+
+  .nav button,
+  .mainLogin button {
+      font-size: 0.9rem;
+  }
 }
