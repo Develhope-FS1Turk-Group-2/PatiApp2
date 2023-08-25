@@ -11,8 +11,21 @@ body {
     align-items: center;
 }
 
+.headerContainer {
+    display: flex;
+    width: 90%;
+    justify-content: start;
+}
+
 .headerContainer img {
     width: 10%;
+    transition: 1s ease;
+}
+
+.headerContainer img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s ease;
 }
 
 .centerContainer {
@@ -43,21 +56,61 @@ body {
     margin-bottom: 1rem;
     background-color: rgba(128, 128, 128, 0.152);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%;
+    transition: 0.5s ease;
+}
+
+.gray:hover {
+    width: 32%;
+    background-color: rgba(121, 73, 26, 0.402);
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .gray img {
-    width:60%;
+    width:70%;
+    height: 60%;
 }
 
 .textContainer {
     width: 30%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
+.buttonClass {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.lowerTextContainer {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
 
+.buttonClass button {
+    border: none;
+    border-radius: 3rem;
+    font-size: 3rem;
+    margin-right: 1rem;
+    background-color: rgba(121, 73, 26, 0.402);
+    color: white;
+    height: 6rem;
+    transition: 0.5s ease;
+}
+
+#petshops{opacity: 0.3;}
+
+.lowerTextContainer h1{font-size: 3rem;}
+
+.buttonClass button:hover {
+    cursor: pointer;
+    height: 8.5rem;
+    transition: 0.5s ease;
+    background-color:rgba(121, 74, 26, 0.69); ;
+}
