@@ -44,6 +44,14 @@
 
 .img img {
     width: 85%;
+    transition: 1s ease;
+}
+
+.img img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s ease;
+    border: pink;
 }
 
 @media only screen and (max-width: 900px) {

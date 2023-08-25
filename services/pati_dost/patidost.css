@@ -14,7 +14,15 @@ body{
     position: relative;
     left: 4rem;
     width: 10%;
+    transition: 1s ease;
 }
+
+.logo-img img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s ease;
+}
+
 .pati-dost {
     display: flex;
     justify-content: center;

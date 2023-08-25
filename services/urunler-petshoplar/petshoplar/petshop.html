@@ -4,11 +4,275 @@
         <meta charset="utf-8">
         <title>Petshops</title>
         <link rel="stylesheet" href="petshop.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <img src="./materials/patiLogo.png" alt="Logo Of PatiApp">>
-        <div class="container">
-            
+        <div class="header">
+            <a href="" title="homepage"><img src="./materials/patiLogo.png" alt="patiLogo"></a>
+            <div class="nav">
+                <div class="background">
+                    <button class="services">Sağlık & PatiVetler</button>
+                    <button class="urunler">Ürünler</button>
+                    <button class="patidost">PatiDost</button>
+                    <button class="whoweare" onclick="redirectTo('./biz_kimiz/biz_kimiz.html')">Biz Kimiz</button>
+                    <button class="sss">SSS</button>
+                </div>
+            </div>
         </div>
+        <section class="main-container">
+            <div class="filter">ahmet</div>
+            <div class="results">
+                <div class="slogan">
+                    <h2>Size en yakın petshopları keşfedin</h2>
+                    <p>Güvenilir bakıcılar ile anlaşın</p>
+                </div>
+                <div class="scrolling-list">
+                    <ul>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">1</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">2</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">3</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">4</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">5</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">6</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">7</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="user-container">
+                            <div class="personal-1">
+                                <img src="./materials/avata_2.jpg" alt="avatar">
+                                <div class="middle-container-1">
+                                    <div class="middle-container-2">
+                                        <div class="circle">8</div>
+                                        <p style="font-size: 20px;">John Doe</p>
+                                    </div>
+                                    <div class="scoring">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <div style="padding-left: 1rem;"><p style="font-size: 18px; color: gray;">4.2</p></div>  
+                                    </div>
+                                </div>
+                                <div class="price">18$</div>
+                                <div class="expand-profile">
+                                    <div class="location">
+                                        <p style="font-size: 12px;">Brooklyn, NY, 11297</p>
+                                    </div>
+                                    <div class="view-button"><button>View Profile</button></div>
+                                    <div class="book-now"><a href="#" style="color: orange;">Book now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <li>Item 9</li>
+                      <li>Item 10</li>
+                      <li>Item 11</li>
+                      <li>Item 12</li>
+                      <li>Item 13</li>
+                      <li>Item 14</li>
+                      <li>Item 15</li>
+                    </ul>
+                  </div>
+            </div>
+            <div id="map" class="map">
+                <img src="./materials/maps.PNG" alt="">
+            </div>
+        </section>
     </body>
 </html>
