@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+.logo-img img {
+    position: relative;
+    left: 4rem;
+    width: 10%;
+}
+.pati-dost {
+    display: flex;
+    justify-content: center;
+}
+.pati-dost .main-image {
+    position: relative;
+    right: -2rem;
+    width: 47%;
+}
+.slogan-container {
+    width: 40%;
+}
+.slogan-container h1 {
+    font-size: 80px;
+    text-align: left;
+    color: rgb(227, 167, 55);
+}
+.btn-container{
+    display: flex;
+    gap: 2rem;
+}
+.btn-container button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 5rem;
+    border: 1px solid gray;
+    transition: .3s;
+}
+.btn-container button:hover {
+    background: rgb(227, 167, 55, .7);
+}
