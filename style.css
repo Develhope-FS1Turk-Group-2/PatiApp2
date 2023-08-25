@@ -15,6 +15,13 @@ body {
 .header img {
     width: 10%;
     margin-top: -2%;
+    transition: 1s ease;
+}
+
+.header img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s ease;
 }
 
 .nav {
